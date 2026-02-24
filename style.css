@@ -50,7 +50,8 @@ h1 {
 }
 
 #admin-form input[type="text"],
-#admin-form input[type="date"] {
+#admin-form input[type="date"],
+#admin-form input[type="number"] {
   padding: 10px;
   width: 200px;
   border: 2px solid #ff6f00;

@@ -17,7 +17,7 @@ function displayMenusAdmin() {
   menus.forEach(menu => {
     const menuDiv = document.createElement('div');
     menuDiv.className = 'menu-item';
-    menuDiv.textContent = `${menu.name}（${menu.date}）`;
+    menuDiv.textContent = `${menu.name}（${menu.date}）（${menu.price ? menu.price + '円）' : '価格未設定）'}`;
     menuList.appendChild(menuDiv);
   });
 }
@@ -26,6 +26,7 @@ function displayMenusAdmin() {
 document.getElementById('add-menu-btn').onclick = () => {
   const menuName = document.getElementById('menu-name').value;
   const menuDate = document.getElementById('menu-date').value;
+  const menuPrice = document.getElementById('menu-price').value;
 
   if (menuName && menuDate) {
     const menus = getMenus();
@@ -33,6 +34,7 @@ document.getElementById('add-menu-btn').onclick = () => {
       id: Date.now().toString(),
       name: menuName,
       date: menuDate,
+      price: menuPrice
     });
 
     saveMenus(menus);
@@ -41,6 +43,7 @@ document.getElementById('add-menu-btn').onclick = () => {
     // 入力欄クリア
     document.getElementById('menu-name').value = '';
     document.getElementById('menu-date').value = '';
+    document.getElementById('menu-price').value = '';
 
     alert('メニューが追加されました！');
   } else {
