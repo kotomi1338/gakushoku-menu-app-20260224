@@ -31,8 +31,8 @@ function displayMenusByDate() {
       const menuItem = document.createElement('div');
       menuItem.className = 'menu-item';
       menuItem.textContent = menu.price
-        ? `${menu.name}（${menu.price}円）`
-        : `${menu.name}（価格未設定）`;
+        ? `${menu.name}（${menu.price}円）👍3件`
+        : `${menu.name}（価格未設定）👍3件`;
       dateSection.appendChild(menuItem);
     });
 
