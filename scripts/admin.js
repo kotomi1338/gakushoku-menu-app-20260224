@@ -24,9 +24,14 @@ function displayMenusAdmin() {
 
 // メニュー追加ボタン
 document.getElementById('add-menu-btn').onclick = () => {
-  const menuName = document.getElementById('menu-name').value;
+  const menuName = document.getElementById('menu-name').value.trim();
   const menuDate = document.getElementById('menu-date').value;
   const menuPrice = document.getElementById('menu-price').value;
+
+  if (!menuName) {
+    alert('メニュー名を正しく入力してください');
+    return;
+  }
 
   if (menuName && menuDate) {
     const menus = getMenus();
