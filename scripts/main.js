@@ -30,7 +30,7 @@ function displayMenusByDate() {
     groupedMenus[date].forEach(menu => {
       const menuItem = document.createElement('div');
       menuItem.className = 'menu-item';
-      menuItem.textContent = menu.name;
+      menuItem.textContent = `${menu.name} 👍3件`;
       dateSection.appendChild(menuItem);
     });
 
