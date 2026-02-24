@@ -30,7 +30,9 @@ function displayMenusByDate() {
     groupedMenus[date].forEach(menu => {
       const menuItem = document.createElement('div');
       menuItem.className = 'menu-item';
-      menuItem.textContent = menu.name;
+      menuItem.textContent = menu.price
+        ? `${menu.name}（${menu.price}円）`
+        : `${menu.name}（価格未設定）`;
       dateSection.appendChild(menuItem);
     });
 
