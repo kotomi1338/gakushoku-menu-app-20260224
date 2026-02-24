@@ -1,0 +1,74 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #ff6f00;
+  font-size: 2em;
+}
+
+.date-card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 111, 0, 0.3);
+}
+
+.date-title {
+  color: #ff8f33;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ff6f00;
+  padding-bottom: 5px;
+}
+
+.menu-item {
+  background-color: #fff8f0;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#admin-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+#admin-form input[type="text"],
+#admin-form input[type="date"] {
+  padding: 10px;
+  width: 200px;
+  border: 2px solid #ff6f00;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#add-menu-btn {
+  background-color: #ff8f33;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#add-menu-btn:hover {
+  background-color: #ff6f00;
+}
